@@ -1,7 +1,7 @@
 --[[
 
      Awesome WM configuration template
-     github.com/lcpz
+     Based on Awesome Copycats: github.com/lcpz
 
 --]]
 
