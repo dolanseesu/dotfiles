@@ -171,14 +171,23 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night Bright)
+
+# VSCode's integrated terminal default colors
+# Primary and dimmed colors needed
+
+# Basic Zenburn Color Scheme - Colors cribbed from the putty version https://gist.github.com/danidiaz/88406bf002009fd97454
+# Dimmed colors needed
+
+# Colors (Gruvbox dark)
+# Color scheme from https://github.com/alacritty/alacritty/wiki/Color-schemes
 colors:
   # Default colors
   primary:
-    #background: '#0a0a0a'
+    # hard contrast: background = '#1d2021'
     background: '#000000'
+    # soft contrast: background = '#32302f'
     foreground: '#ffdcc8'
-
+    
     # Bright and dim foreground colors
     #
     # The dimmed foreground color is calculated automatically if it is not present.
@@ -194,7 +203,7 @@ colors:
   cursor:
   #  text: '#000000'
     cursor: '#ffeeff'
-
+    
   # Selection colors
   #
   # Colors which should be used to draw the selection area. If selection
@@ -205,27 +214,27 @@ colors:
   #  background: '#404040'
 
   # Normal colors
-  #normal:
-  #  black:   '#000000'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e6c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0ba'
-  #  white:   '#eaeaea'
+  normal:
+    black:   '#282828'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#ff3334'
-  #  green:   '#9ec400'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#b77ee0'
-  #  cyan:    '#54ced6'
-  #  white:   '#ffffff'
-
+  bright:
+    black:   '#928374'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
+  
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
