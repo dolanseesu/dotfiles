@@ -54,6 +54,7 @@ set nobackup
 " adjust search
 set nohlsearch
 set incsearch
+set ignorecase
 set smartcase
 " this would remap :nohlsearch to the space-key
 ":nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -68,9 +69,6 @@ set backspace=indent,eol,start
 set laststatus=2
 set noshowmode
 set timeoutlen=1000 ttimeoutlen=10
-
-" set height of command line to 2
-set cmdheight=2
 
 " autocomplete
 set wildmenu
