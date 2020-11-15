@@ -30,6 +30,7 @@ set encoding=utf-8
 set history=500
 set nocompatible
 set title
+set mouse+=a
 
 " disable annoying alerts
 set noerrorbells
@@ -67,6 +68,7 @@ set showmatch
 set backspace=indent,eol,start
 
 set laststatus=2
+set hidden
 set noshowmode
 set timeoutlen=1000 ttimeoutlen=10
 
@@ -85,6 +87,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>l
+
+" disable Q in normal mode
+nmap Q <Nop>
 
 " Colors
 colorscheme gruvbox
