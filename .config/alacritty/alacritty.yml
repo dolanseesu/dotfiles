@@ -183,10 +183,10 @@ font:
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '#1d2021'
     background: '#000000'
-    # soft contrast: background = '#32302f'
+    #background: '#282828'
     foreground: '#ffdcc8'
+    #foreground: '#ebdbb2'
     
     # Bright and dim foreground colors
     #
