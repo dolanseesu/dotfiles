@@ -1,5 +1,5 @@
-# set the right screen layout
-#bash ~/.screenlayout/set-screen.sh
+# set screen layout
+xrandr --output HDMI-0 --mode 1920x1080 --pos 0x180 --rotate normal --output DP-0 --mode 2560x1440 --pos 1920x0 --rotate normal
 
 # set keyboard layout and disable caps
 setxkbmap -option caps:none

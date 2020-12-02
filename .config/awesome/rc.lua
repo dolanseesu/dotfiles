@@ -80,7 +80,7 @@ local themes = {
     "powerarrow-dark", -- 4
 }
 
-local chosen_theme = themes[4]
+local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "alacritty"
@@ -92,7 +92,8 @@ local browser      = os.getenv("BROWSER") or "brave"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5" }
+--awful.util.tagnames = { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { "I", "II", "III", "IV", "V" }
 awful.layout.layouts = {
     --awful.layout.suit.floating,
     awful.layout.suit.tile,
