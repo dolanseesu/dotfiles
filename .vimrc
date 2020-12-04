@@ -45,7 +45,8 @@ set smartindent
 
 " line numbers and wrapping
 set number relativenumber
-set nowrap
+set wrap
+set linebreak
 
 " Disable backups and swap files
 set noswapfile
