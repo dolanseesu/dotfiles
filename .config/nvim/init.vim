@@ -18,10 +18,10 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Lightline
-let g:lightline = { 'colorscheme': 'deus', }
+"let g:lightline = { 'colorscheme': 'deus', }
 
 " General
 syntax on
@@ -31,6 +31,7 @@ set history=500
 set nocompatible
 set title
 set mouse+=a
+set ruler
 
 " disable annoying alerts
 set noerrorbells
@@ -93,7 +94,7 @@ map <C-l> <C-w>l
 nmap Q <Nop>
 
 " Colors
-colorscheme gruvbox
+"colorscheme gruvbox
 set background=dark
 
 hi Normal guibg=NONE ctermbg=None
@@ -104,5 +105,5 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " Autocomplete Python
-let g:pydiction_location = '/home/simon/.vim/bundle/pydiction/complete-dict'
-let g:pydiction_menu_height = 5
+"let g:pydiction_location = '/home/simon/.vim/bundle/pydiction/complete-dict'
+"let g:pydiction_menu_height = 5
