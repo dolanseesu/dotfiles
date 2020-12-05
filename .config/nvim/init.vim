@@ -23,6 +23,15 @@
 " Lightline
 "let g:lightline = { 'colorscheme': 'deus', }
 
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
 " General
 syntax on
 filetype plugin indent on
@@ -94,8 +103,10 @@ map <C-l> <C-w>l
 nmap Q <Nop>
 
 " Colors
-"colorscheme gruvbox
+colorscheme gruvbox
 set background=dark
+
+let g:airline_theme= 'gruvbox'
 
 hi Normal guibg=NONE ctermbg=None
 
