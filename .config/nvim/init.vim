@@ -17,18 +17,15 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Pathogen
-"execute pathogen#infect()
-
-" Lightline
-"let g:lightline = { 'colorscheme': 'deus', }
-
+" Load Plugins using vim-plug
+" more info: https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 
-Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
+"Plug 'franbach/miramare'
 
 call plug#end()
 
@@ -41,6 +38,7 @@ set nocompatible
 set title
 set mouse+=a
 set ruler
+set cursorline
 
 " disable annoying alerts
 set noerrorbells
@@ -93,7 +91,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " change split behaviour
 set splitbelow splitright
 
-" Change shortcuts for split navigation
+" Optimize shortcuts for split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -103,13 +101,23 @@ map <C-l> <C-w>l
 nmap Q <Nop>
 
 " Colors
-colorscheme gruvbox
+set termguicolors
 set background=dark
+" For more info, see :help gruvbox-material.txt
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_enable_bold = 0
+let g:gruvbox_material_lightline_disable_bold = 1
+let g:gruvbox_material_palette = 'material'
+"let g:miramare_enable_italic = 1
+colorscheme gruvbox-material
 
-let g:airline_theme= 'gruvbox'
+" modify lightline to show the absolute file path
+let g:lightline = { 'colorscheme': 'gruvbox_material', 
+                    \ 'active': {
+                    \ 'left': [['mode', 'paste'], ['readonly', 'absolutepath', 'modified']],}}
 
-hi Normal guibg=NONE ctermbg=None
-
+hi Normal guibg=NONE ctermbg=235
 
 " Autocomplete HTML/CSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
