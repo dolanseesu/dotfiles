@@ -31,5 +31,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias vim='nvim'
 alias pac='sudo pacman'
 alias gs='git status'
