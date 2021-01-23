@@ -117,7 +117,8 @@ let g:lightline = { 'colorscheme': 'gruvbox_material',
                     \ 'active': {
                     \ 'left': [['mode', 'paste'], ['readonly', 'absolutepath', 'modified']],}}
 
-hi Normal guibg=NONE ctermbg=235
+hi Normal guibg=None guifg=None ctermbg=None ctermfg=None
+hi CursorLine cterm=bold ctermbg=None ctermfg=None gui=bold guibg=None guifg=None
 
 " Autocomplete HTML/CSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
