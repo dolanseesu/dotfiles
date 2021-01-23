@@ -96,7 +96,7 @@ nmap Q <Nop>
 colorscheme gruvbox
 set background=dark
 
-hi Normal guibg=NONE ctermbg=None
+hi Normal guibg=None ctermbg=None
 
 
 " Autocomplete HTML/CSS
