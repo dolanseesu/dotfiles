@@ -49,6 +49,7 @@ set shiftwidth=4
 set expandtab
 set smarttab
 set smartindent
+set scrolloff=8
 
 " line numbers and wrapping
 set number relativenumber

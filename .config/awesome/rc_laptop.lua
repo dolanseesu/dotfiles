@@ -506,6 +506,9 @@ globalkeys = my_table.join(
     -- User programs
     awful.key({ modkey }, "b", function () awful.spawn("librewolf") end,
               {description = "Librewolf", group = "_custom"}),
+
+    awful.key({ modkey, "Shift" }, "b", function () awful.spawn("brave") end,
+              {description = "Brave", group = "_custom"}),
     	      
     awful.key({ modkey }, "e", function () awful.spawn("thunar") end,
               {description = "Thunar File Manager", group = "_custom"}),
