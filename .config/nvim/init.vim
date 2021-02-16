@@ -24,8 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 
-Plug 'sainnhe/gruvbox-material'
-"Plug 'franbach/miramare'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -103,22 +102,16 @@ nmap Q <Nop>
 " Colors
 set termguicolors
 set background=dark
-" For more info, see :help gruvbox-material.txt
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_enable_bold = 0
-let g:gruvbox_material_lightline_disable_bold = 1
-let g:gruvbox_material_palette = 'material'
-"let g:miramare_enable_italic = 1
-colorscheme gruvbox-material
+colorscheme gruvbox
 
 " modify lightline to show the absolute file path
-let g:lightline = { 'colorscheme': 'gruvbox_material', 
+let g:lightline = { 'colorscheme': 'gruvbox', 
                     \ 'active': {
                     \ 'left': [['mode', 'paste'], ['readonly', 'absolutepath', 'modified']],}}
 
 hi Normal guibg=None guifg=None ctermbg=None ctermfg=None
 hi CursorLine cterm=bold ctermbg=None ctermfg=None gui=bold guibg=None guifg=None
+hi Comment cterm=italic gui=italic
 
 " Autocomplete HTML/CSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
