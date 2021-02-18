@@ -69,7 +69,7 @@ ReadTags = no
 #
 # Example:    MusicDir = "/home/joe/music"
 #
-MusicDir = "/home/simon/Music"
+MusicDir = "/home/simon/HDD/Music/"
 
 # Start in the music directory by default?  If set to 'no', start
 # in the current directory by default.  A single directory on
@@ -219,7 +219,7 @@ StartInMusicDir = yes
 #
 # Example:    Theme = laras_theme
 #
-Theme = orange_theme
+Theme = gruvbox_theme
 
 # The theme used when running on an xterm.
 #
