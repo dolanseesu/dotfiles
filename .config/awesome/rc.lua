@@ -1,7 +1,37 @@
 --[[
 
-     Awesome WM configuration template
-     Based on Awesome Copycats: github.com/lcpz
+
+    ########   ######      ##       ##     ##    ###    
+    ##     ## ##    ##     ##       ##     ##   ## ##   
+    ##     ## ##           ##       ##     ##  ##   ##  
+    ########  ##           ##       ##     ## ##     ## 
+    ##   ##   ##           ##       ##     ## ######### 
+    ##    ##  ##    ## ### ##       ##     ## ##     ## 
+    ##     ##  ######  ### ########  #######  ##     ## 
+
+
+    ####  #   #     ##### #   #   #   
+    #   # #   #      #  #  # #   # #  
+    ####   ####      #  #   #   ##### 
+    #         #      #  #  #    #   # 
+    #         #  #  #   # #     #   # 
+
+ 
+    Programs used in this config:
+        - Alacritty
+        - dmenu
+        - slock
+        - flameshot
+        - LibreWolf
+        - Brave
+        - Thunar
+        - marktext
+
+    Based on Awesome Copycats: github.com/lcpz
+
+    Maintainer:
+        Simon Hensel
+        https://github.com/dolanseesu/dotfiles
 
 --]]
 
@@ -74,21 +104,20 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 local themes = {
-    "copland",         -- 1
-    "multicolor",      -- 2
-    "powerarrow",      -- 3
-    "powerarrow-dark", -- 4
+    "multicolor",      -- 1
+    "powerarrow",      -- 2
+    "powerarrow-dark", -- 3
 }
 
-local chosen_theme = themes[2]
+local chosen_theme = themes[1]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
-local editor       = os.getenv("EDITOR") or "vim"
-local gui_editor   = os.getenv("GUI_EDITOR") or "gvim"
-local browser      = os.getenv("BROWSER") or "brave"
+local editor       = os.getenv("EDITOR") or "nvim"
+local gui_editor   = os.getenv("GUI_EDITOR") or "nvim"
+local browser      = os.getenv("BROWSER") or "librewolf"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
@@ -495,14 +524,17 @@ globalkeys = my_table.join(
         {description = "mpc on/off", group = "widgets"}),
 
     -- User programs
-    awful.key({ modkey }, "b", function () awful.spawn("brave") end,
-              {description = "Brave", group = "_custom"}),
+    awful.key({ modkey }, "b", function () awful.spawn("librewolf") end,
+              {description = "LibreWolf", group = "_custom"}),
     	      
+    awful.key({ modkey, "Shift" }, "b", function () awful.spawn("brave") end,
+              {description = "Brave", group = "_custom"}),
+
     awful.key({ modkey }, "e", function () awful.spawn("thunar") end,
               {description = "Thunar File Manager", group = "_custom"}),
     
-    awful.key({ modkey }, "t", function () awful.spawn("typora") end,
-              {description = "Typora", group = "_custom"}),
+    awful.key({ modkey }, "t", function () awful.spawn("marktext") end,
+              {description = "Marktext", group = "_custom"}),
     
     awful.key({ modkey }, "F11", function () awful.spawn("flameshot gui") end,
               {description = "Take Screenshot", group = "_custom"}),
