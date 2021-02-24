@@ -74,19 +74,12 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 local themes = {
-    "blackburn",       -- 1
-    "copland",         -- 2
-    "dremora",         -- 3
-    "holo",            -- 4
-    "multicolor",      -- 5
-    "powerarrow",      -- 6
-    "powerarrow-dark", -- 7
-    "rainbow",         -- 8
-    "steamburn",       -- 9
-    "vertex",          -- 10
+    "multicolor",      -- 1
+    "powerarrow",      -- 2
+    "powerarrow-dark", -- 3
 }
 
-local chosen_theme = themes[5]
+local chosen_theme = themes[1]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "alacritty"
@@ -507,9 +500,6 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "b", function () awful.spawn("librewolf") end,
               {description = "Librewolf", group = "_custom"}),
 
-    awful.key({ modkey, "Shift" }, "b", function () awful.spawn("brave") end,
-              {description = "Brave", group = "_custom"}),
-    	      
     awful.key({ modkey }, "e", function () awful.spawn("thunar") end,
               {description = "Thunar File Manager", group = "_custom"}),
     
