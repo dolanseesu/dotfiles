@@ -5,6 +5,8 @@ xrandr --output HDMI-0 --mode 1920x1080 --pos 0x180 --rotate normal --output DP-
 setxkbmap -option caps:none
 setxkbmap -model pc105 -layout us -variant altgr-intl
 
+light -S 30
+
 #export GTK_THEME=Adwaita:dark
 export GTK_THEME=Materia-dark
 
