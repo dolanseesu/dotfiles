@@ -15,7 +15,6 @@
         - dmenu
         - slock
         - flameshot
-        - LibreWolf
         - Brave
         - Thunar
         - marktext
@@ -110,7 +109,7 @@ local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awe
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "nvim"
 local gui_editor   = os.getenv("GUI_EDITOR") or "nvim"
-local browser      = os.getenv("BROWSER") or "librewolf"
+local browser      = os.getenv("BROWSER") or "brave"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
@@ -517,10 +516,7 @@ globalkeys = my_table.join(
         {description = "mpc on/off", group = "widgets"}),
 
     -- User programs
-    awful.key({ modkey }, "b", function () awful.spawn("librewolf") end,
-              {description = "LibreWolf", group = "_custom"}),
-    	      
-    awful.key({ modkey, "Shift" }, "b", function () awful.spawn("brave") end,
+    awful.key({ modkey }, "b", function () awful.spawn("brave") end,
               {description = "Brave", group = "_custom"}),
 
     awful.key({ modkey }, "e", function () awful.spawn("thunar") end,
