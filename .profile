@@ -10,4 +10,5 @@ export TERMINAL="alacritty"
 export BROWSER="brave"
 export READER="zathura"
 export MANPAGER="nvim -c 'set ft=man' -"
-export GTK_THEME=Adwaita:dark
+#export GTK_THEME=Adwaita:dark
+export GTK_THEME=Materia:dark
