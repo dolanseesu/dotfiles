@@ -39,6 +39,10 @@ set mouse+=a
 set ruler
 set cursorline
 
+" display whitespaces and other invisible chars
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
+
 " disable annoying alerts
 set noerrorbells
 set novisualbell
