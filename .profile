@@ -5,7 +5,11 @@ xrandr --output HDMI-0 --mode 1920x1080 --pos 0x180 --rotate normal --output DP-
 setxkbmap -option caps:none
 setxkbmap -model pc105 -layout us -variant altgr-intl
 
-export EDITOR="vim"
+# set brightness at startup
+#light -S 30
+
+export EDITOR="nvim"
+export VIISUAL="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export READER="zathura"
