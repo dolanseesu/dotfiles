@@ -124,7 +124,7 @@ StartInMusicDir = yes
 # Sound driver - OSS, ALSA, JACK, SNDIO (on OpenBSD) or null (only for
 # debugging).  You can enter more than one driver as a colon-separated
 # list.  The first working driver will be used.
-#SoundDriver = JACK:ALSA:OSS
+SoundDriver = JACK:ALSA:OSS
 
 # Jack output settings.
 #JackClientName = "moc"
@@ -177,7 +177,7 @@ StartInMusicDir = yes
 # Mixin (0.0-1.0) is used to determine how much of the original signal is
 # used after equalizing.  0 means to only use the equalized sound, while 1
 # effectively disabled the mixer.  The default is 0.25.
-#Equalizer_SaveState = yes
+Equalizer_SaveState = yes
 
 # Show files with dot at the beginning?
 #ShowHiddenFiles = no
