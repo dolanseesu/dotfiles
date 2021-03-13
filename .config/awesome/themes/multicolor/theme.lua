@@ -16,13 +16,19 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
-theme.wallpaper                                 = theme.confdir .. "/wall.jpg"
+theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/wallpapers/girl-sunset.jpg"
 theme.font                                      = "Roboto Mono 10"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#000000"
-theme.bg_focus                                  = "#000000"
+theme.bg_normal                                 = "#00000080"
+theme.bg_focus                                  = "#00000080"
 theme.bg_urgent                                 = "#000000"
+theme.tasklist_bg_focus                         = "#00000000"
+theme.tasklist_bg_normal                        = "#00000000"
+theme.titlebar_bg_focus                         = "#00000000"
+theme.titlebar_bg_normal                        = "#0000000"
+theme.taglist_bg_focus                          = "#00000000"
+theme.taglist_bg_normal                         = "#0000000"
 theme.fg_normal                                 = "#aaaaaa"
 theme.fg_focus                                  = "#ff8c00"
 theme.fg_urgent                                 = "#af1d18"
@@ -280,10 +286,10 @@ function theme.at_screen_connect(s)
     s.mytaglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, awful.util.taglist_buttons)
 
     -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
+    s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons )
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(19), bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(19), bg = theme.bg_normal, fg = theme.fg_normal})
 
     -- Add widgets to the wibox
     s.mywibox:setup {
