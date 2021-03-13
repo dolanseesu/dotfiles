@@ -54,10 +54,10 @@ cd ~/.config || exit 1
 config_dirs=(alacritty awesome neofetch zathura)
 
 for i in ${config_dirs[*]}; do
-    if [ -d ${i} ]; then
+    if [ -d ${i} ] || [ -f ${i} ]; then
         rm -rf ${i}
     fi
-    ln -sf ${dotdir}/${i} ${i}
+    ln -sf ${dotdir}/"${i}" "${i}"
 done
 
 if [ ! -d nvim ]; then
