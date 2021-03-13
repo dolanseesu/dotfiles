@@ -9,6 +9,8 @@ dirs=(dolanseesu.github.io dotfiles markdown python studium)
 # ${dirs[*]} - list elements of array
 # ${!dirs[*]} - list indices of array
 
+cd ~/ || exit 1
+
 for i in ${dirs[*]}; do
     if [ -d ${i} ]; then
         echo "cd into ${i}..."
@@ -18,6 +20,6 @@ for i in ${dirs[*]}; do
     fi
 done
 
-cd || exit 1
+cd ~/ || exit 1
 echo -e "\nAll done."
 exit 0
