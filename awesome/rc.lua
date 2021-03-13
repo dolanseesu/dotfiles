@@ -537,23 +537,25 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})
     --]]
+
     --dmenu
     awful.key({ modkey }, "r", function ()
             os.execute(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-            beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
+           -- bg_normal, fg_normal, bg_focus, fg_focus
+            "#000000", "#aaaaaa", "#000000", "#ff8c00"))
         end,
         {description = "run dmenu", group = "_custom"}),
     
-    -- alternatively use rofi, a dmenu-like application with more features
+    --[[ alternatively use rofi, a dmenu-like application with more features
     -- check https://github.com/DaveDavenport/rofi for more details
-    --[[ rofi
-    awful.key({ modkey }, "x", function ()
+    awful.key({ modkey }, "a", function ()
             os.execute(string.format("rofi -show %s -theme %s",
-            'run', 'dmenu'))
+            'run', 'dmenu',))
         end,
         {description = "show rofi", group = "launcher"}),
     --]]
-    -- Prompt
+
+    -- default Prompt
     --awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
     --          {description = "run prompt", group = "launcher"}),
 
@@ -567,7 +569,6 @@ globalkeys = my_table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"})
-    --]]
 )
 
 clientkeys = my_table.join(

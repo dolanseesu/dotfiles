@@ -41,7 +41,7 @@ set cursorline
 
 " display whitespaces and other invisible chars
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set list
+set nolist
 
 " disable annoying alerts
 set noerrorbells
@@ -125,3 +125,12 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " Autocomplete Python
 "let g:pydiction_location = '/home/simon/.vim/bundle/pydiction/complete-dict'
 "let g:pydiction_menu_height = 5
+
+" autocomplete certain characters
+"inoremap ( ()<Esc>i
+"inoremap { {}<Esc>i
+"inoremap {<CR> {<CR>}<Esc>O
+"inoremap [ []<Esc>i
+"inoremap < <><Esc>i
+"inoremap ' ''<Esc>i
+"inoremap " ""<Esc>i
