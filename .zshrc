@@ -5,7 +5,7 @@ autoload -U colors && colors
 PS1="%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$ "
 
 # general settings
-setopt autocd extendedglob nomatch correctall
+setopt autocd extendedglob nomatch
 unsetopt beep notify
 stty stop undef
 
@@ -74,11 +74,12 @@ alias pac='sudo pacman'
 alias g='git'
 alias uppac='sudo reflector --country France --country Germany --latest 10 --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias p='python3'
-alias pullall='cd ~/dotfiles && git pull && cd'
 
 # Edit line in vim with ctrl-e (requires 'export VISUAL=nvim' in .profile)
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load syntax highlighting; should be last.
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+#source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
