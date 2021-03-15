@@ -63,6 +63,12 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# Git
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+
 # some aliases
 alias ls='ls -hlN --color=auto --group-directories-first'
 alias la='ls -AhlN --color=auto --group-directories-first'
@@ -71,7 +77,6 @@ alias grep='grep --color=auto'
 alias ..='cd ..'
 alias vim='nvim'
 alias pac='sudo pacman'
-alias g='git'
 alias uppac='sudo reflector --country France --country Germany --latest 10 --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias p='python3'
 
