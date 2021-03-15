@@ -1,10 +1,11 @@
-#! /bin/sh
+#! /bin/bash
 
 # creates symbolic links for my dotfiles so all files can stay in ~/dotfiles
 # WARNING: this script will overwrite existing files that match the filenames from the dotfiles repo!
 # tested with bash, zsh and sh. other shells may not work
 
 dotdir=~/dotfiles   # specify the FULL path to the repo here
+laptop=0
 
 # make sure to start in the home directory
 cd ~/ || exit 1

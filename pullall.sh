@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # this script goes through all my git repos and executes a git pull
 
