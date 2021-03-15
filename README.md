@@ -14,8 +14,8 @@ Clone the repo into your home directory:
 git clone https://github.com/dolanseesu/dotfiles.git ~/ && cd dotfiles
 ```
 
-Run the install-script. You may ignore the question about the laptop setup, that is just for my personal setup.
-WARNING: This script deletes all presets files and replaces them with symlinks, so use with caution.
+Run the install-script. You may ignore the question about the laptop setup, that is just for me.
+WARNING: This script deletes all preset files and replaces them with symlinks, so use with caution.
 
 ```bash
 ./install.sh
