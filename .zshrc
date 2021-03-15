@@ -67,7 +67,7 @@ alias rm='rm -i'
 alias g='git'
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit'
+alias gc='git commit -m'
 
 # some aliases
 alias ls='ls -hlN --color=auto --group-directories-first'
