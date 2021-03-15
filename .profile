@@ -6,7 +6,7 @@ setxkbmap -option caps:none
 setxkbmap -model pc105 -layout us -variant altgr-intl
 
 # set brightness at startup
-#light -S 30
+light -S 30
 
 export EDITOR="nvim"
 export VIISUAL="nvim"
