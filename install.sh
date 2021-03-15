@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # creates symbolic links for my dotfiles so all files can stay in ~/dotfiles
 # WARNING: this script will overwrite existing files that match the filenames from the dotfiles repo!
@@ -71,14 +71,14 @@ if [ "$laptop" = true ]; then
         fi
         cp -r "$dotdir"/"$i" .
     done
-
+    
+    # put laptop dotfiles in place
     rm -f alacritty/alacritty.yml
     mv alacritty/alacritty_laptop.yml alacritty/alacritty.yml
     rm -f awesome/rc.lua
     mv awesome/rc_laptop.lua awesome/rc.lua
 else
     config_dirs=(alacritty awesome neofetch zathura)
-    copydirs=()
 fi
 
 for i in "${config_dirs[@]}"; do
@@ -88,7 +88,6 @@ for i in "${config_dirs[@]}"; do
     ln -sf "$dotdir"/"$i" "$i"
 done
 
-
 if [ ! -d nvim ]; then
     mkdir -p nvim
 fi
@@ -97,7 +96,7 @@ cd nvim || exit 1
 
 ln -sf "$dotdir"/nvim/init.vim init.vim
 
-cd || exit 1
+cd ~/ || exit 1
 echo "All done, no errors."
 
 exit 0
