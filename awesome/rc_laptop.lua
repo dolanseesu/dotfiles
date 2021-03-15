@@ -85,7 +85,7 @@ local altkey       = "Mod1"
 local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
-local editor       = os.getenv("EDITOR") or "vim"
+local editor       = os.getenv("EDITOR") or "nvim"
 local gui_editor   = os.getenv("GUI_EDITOR") or "nvim"
 local browser      = os.getenv("BROWSER") or "brave"
 local scrlocker    = "slock"
@@ -180,7 +180,7 @@ lain.layout.cascade.tile.extra_padding = dpi(5)
 lain.layout.cascade.tile.nmaster       = 5
 lain.layout.cascade.tile.ncol          = 2
 
-beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
+beautiful.init(string.format("%s/.config/awesome/themes/%s/theme_laptop.lua", os.getenv("HOME"), chosen_theme))
 -- }}}
 
 -- {{{ Menu
