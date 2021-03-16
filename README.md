@@ -7,7 +7,7 @@ This repository contains my personal Linux dotfiles.
 Programs in the screenshot:
 - Neovim
 - Neofetch
-- MOC (with the Gruvbox color scheme, based on [this](github.com/hringriin/dotfiles))
+- MOC (with the Gruvbox color scheme, based on [this](https://github.com/hringriin/dotfiles/blob/master/moc/themes/hringriin_theme))
 
 My Awesome theme is based on Multicolor from [Awesome Copycats](https://github.com/lcpz/awesome-copycats).
 
