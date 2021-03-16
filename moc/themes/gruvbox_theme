@@ -1,11 +1,9 @@
 # Original author: github.com/hringriin/dotfiles
-
+#
 # For detailed info on each attribute, see the orange_theme file.
-
 #----------------------------------------------------------------
 # inspired by morhetz' gruvbox theme
 # https://github.com/morhetz/gruvbox
-
 
 #colordef    black       =   157     157     157
 colordef    black       =   114     125     129
@@ -23,21 +21,22 @@ colordef    cyan        =   408     616     416
 colordef    white       =   922     859     698
 colordef    grey        =   659     600     518
 
+# start colorscheme
 background              =   black       default
 frame                   =   green       default   dim
-window_title            =   cyan        default   reverse
+window_title            =   green       default   reverse
 directory               =   blue        default
 selected_directory      =   blue        black   reverse
 playlist                =   green       default
-selected_playlist       =   green       default   reverse
+selected_playlist       =   green       default reverse
 file                    =   white       default
 selected_file           =   white       black   reverse
-marked_file             =   cyan        black
-marked_selected_file    =   cyan        black   reverse
-marked_info             =   cyan        black
-marked_selected_info    =   cyan        black
+marked_file             =   green       default
+marked_selected_file    =   green       black   reverse
+marked_info             =   green       default
+marked_selected_info    =   green       default
 info                    =   red         default 
-selected_info           =   red         black
+selected_info           =   red         default
 status                  =   red         default
 title                   =   blue        default
 state                   =   red         default   bold
