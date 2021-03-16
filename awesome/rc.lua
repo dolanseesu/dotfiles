@@ -1,6 +1,5 @@
 --[[
 
-
     ########   ######      ##       ##     ##    ###    
     ##     ## ##    ##     ##       ##     ##   ## ##   
     ##     ## ##           ##       ##     ##  ##   ##  
@@ -14,17 +13,16 @@
         - Alacritty
         - dmenu
         - slock
-        - flameshot
+        - Flameshot
         - Brave
         - Thunar
-        - marktext
+        - Marktext
 
     Based on Awesome Copycats: github.com/lcpz
 
     Maintainer:
         Simon Hensel
         https://github.com/dolanseesu/dotfiles
-
 --]]
 
 -- {{{ Required libraries
