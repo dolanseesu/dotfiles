@@ -4,7 +4,12 @@
 
 This repository contains my personal Linux dotfiles.
 
-The Awesome theme is a based on [Awesome Copycats](https://github.com/lcpz/awesome-copycats).
+Programs in the screenshot:
+- Neovim
+- Neofetch
+- MOC (with the Gruvbox color scheme, based on [this](github.com/hringriin/dotfiles))
+
+My Awesome theme is based on Multicolor from [Awesome Copycats](https://github.com/lcpz/awesome-copycats).
 
 ## Installation
 
@@ -18,13 +23,13 @@ Run the install-script. You may ignore the question about the laptop setup, that
 WARNING: This script deletes all preset files and replaces them with symlinks, so use with caution.
 
 ```bash
-./install.sh
+~/dotfiles/install.sh
 ```
 
 If nothing happens, make sure to set the script as executable.
 
 ```bash
-chmod 744 install.sh
+chmod 744 ~/dotfiles/install.sh
 ```
 
 While this repo was created for personal use, feel free to use it (the terms of the GNU General Public License v3.0 apply).
