@@ -1,24 +1,22 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # this script goes through all my git repos and executes a git pull
 
-# array with dirs
-git_dirs=(dolanseesu.github.io dotfiles markdown python studium)
-
-# ${dirs[@]} - list elements of array
-# ${!dirs[@]} - list indices of array
+#"${my_array[@]}" - list elements of array
+#"${!my_array[@]}" - list indices of array
 
 cd ~/ || exit 1
 
-for i in "${git_dirs[@]}"; do
+for i in dolanseesu.github.io dotfiles markdown python studium; do
     if [ -d "$i" ]; then
-        echo -e "\ncd into ${i}..."
+        echo "cd into ${i}..."
         cd ~/"$i" || exit 1
         git pull
-        cd || exit 1
+        cd ~/ || exit 1
+        echo "-------------------------------------"
     fi
 done
 
 cd ~/ || exit 1
-echo -e "\nAll done."
+echo "All done."
 exit 0
